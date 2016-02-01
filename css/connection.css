@@ -1,0 +1,163 @@
+.connection__header {
+    height: 138px;
+    box-sizing: border-box;
+    background-color: #48cbe8;
+    border-bottom: 17px solid #67dffa;
+    color: #fff;
+    margin: 0;
+    font-family: fira_sansbook;
+    font-size: 27px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1;
+    padding-top: 51px;
+    margin-bottom: 49px;
+}
+
+.connection__form {
+    width: 402px;
+    margin: 0 auto;
+    border: none;
+}
+
+.fieldset {
+    margin: 0 0 17px 0;
+    padding: 0;
+    border: none;
+}
+
+.name__label, .email__label, .message__label, .captcha__label {
+    display: block;
+    font-family: fira_sanslight;
+    font-size: 19px;
+    color: #a1a6b3;
+    width: 192px;
+}
+
+.message__label {
+    width: 100%;
+}
+
+.name__label {
+    float: left;
+}
+
+.email__label {
+    float: right;
+}
+
+.captcha__label {
+    width: 100%;
+}
+
+
+.name-edit__name, .email-edit__email, .message-edit__message, .captcha-edit__captcha, .captcha__area {
+    width: 100%;
+    height: 41px;
+    box-sizing: border-box;
+    color: #3ba8c0;
+    border: 1px solid #3ba8c0;
+    border-radius: 3px;
+    font-family: fira_sanslight;
+    font-size: 13px;
+    padding: 0 0 0 10px;
+    background-color: #fbfcfd;
+}
+
+.captcha-edit__captcha, .captcha__area {
+    width: 192px;
+}
+
+.captcha__area {
+    height: 79px;
+    font-family: ogilvie_cyrregular;
+    font-size: 43px;
+    padding-left: 15px;
+    color: #58697a;
+}
+
+.captcha-edit__captcha {
+    float: right;
+    height: 32px;
+    margin-top: 23px;
+}
+
+.message-edit__message {
+    resize: none;
+    padding: 14px 0 0 10px;
+    height: 183px;
+}
+
+input::-moz-placeholder {
+    color: #3ba8c0;
+}
+
+input:-ms-input-placeholder {
+    color: #3ba8c0;
+}
+
+input::-webkit-input-placeholder {
+    color: #3ba8c0;
+}
+
+
+textarea::-moz-placeholder {
+    color: #3ba8c0;
+}
+
+textarea:-ms-input-placeholder {
+    color: #3ba8c0;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #3ba8c0;
+}
+
+button,
+button:active,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.button--submit, .button--reset {
+    width: 138px;
+    height: 30px;
+    color: #fff;
+    font-family: fira_sansbook;
+    font-size: 19px;
+    border-radius: 4px;
+    border: none;
+
+}
+
+.button--submit {
+    float: left;
+    background-color: #48cbe8;
+    box-shadow: 0 2px 5px #3ba8c0;
+}
+
+.button--reset {
+    float: right;
+    background-color: #849db5;
+    box-shadow: 0 2px 5px #687b8f;
+}
+
+.button--reset:hover {
+    background-color: #6b88a4;
+}
+
+.button--submit:hover {
+    background-color: #24bbdc;
+}
+
+.button--reset:active,
+.button--submit:active {
+    box-shadow: none;
+}
+
+.buttons {
+    margin: 0;
+}
+
