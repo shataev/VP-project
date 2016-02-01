@@ -1,0 +1,512 @@
+@font-face {
+    font-family: 'proxima_nova_condensedSBd';
+    src: url('../fonts/proximanovacond-semibold-webfont.eot');
+    src: url('../fonts/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/proximanovacond-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/proximanovacond-semibold-webfont.woff') format('woff'),
+    url('../fonts/proximanovacond-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fira_sansbook';
+    src: url('../fonts/firasans-book-webfont.eot');
+    src: url('../fonts/firasans-book-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/firasans-book-webfont.woff2') format('woff2'),
+    url('../fonts/firasans-book-webfont.woff') format('woff'),
+    url('../fonts/firasans-book-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'fira_sansmedium';
+    src: url('../fonts/firasans-medium-webfont.eot');
+    src: url('../fonts/firasans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/firasans-medium-webfont.woff2') format('woff2'),
+    url('../fonts/firasans-medium-webfont.woff') format('woff'),
+    url('../fonts/firasans-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'fira_sanslight';
+    src: url('../fonts/firasans-light-webfont.eot');
+    src: url('../fonts/firasans-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/firasans-light-webfont.woff2') format('woff2'),
+    url('../fonts/firasans-light-webfont.woff') format('woff'),
+    url('../fonts/firasans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fira_sanslight_italic';
+    src: url('../fonts/firasans-lightitalic-webfont.eot');
+    src: url('../fonts/firasans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/firasans-lightitalic-webfont.woff2') format('woff2'),
+    url('../fonts/firasans-lightitalic-webfont.woff') format('woff'),
+    url('../fonts/firasans-lightitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ogilvie_cyrregular';
+    src: url('../fonts/ogil-webfont.eot');
+    src: url('../fonts/ogil-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ogil-webfont.woff2') format('woff2'),
+    url('../fonts/ogil-webfont.woff') format('woff'),
+    url('../fonts/ogil-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url("../imgs/comppattern2.png");
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.wrapper {
+    width:100%;
+    margin: 0 auto;
+    min-height: 100%;
+    min-width: 1200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-wrapper:after {
+    content: "";
+    display: block;
+    height: 68px;
+}
+
+/*Header*/
+
+.header {
+    width: 100%;
+    background-color: #eff3f7;
+
+}
+
+.header__wrapper{
+    height: 116px;
+    width: 1200px;
+    margin: 0 auto;
+
+    vertical-align: middle;
+}
+
+.header__logo {
+    float: left;
+    margin-top: 41px;
+}
+
+/*Кнопки социальных сетей*/
+
+.socials {
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 35px 0 0 0;
+}
+
+.socials__item {
+    float: left;
+    margin-left: 25px;
+}
+
+.socials__item:first-child{
+    margin-left: 0;
+}
+
+.main-wrapper {
+    width:960px;
+    margin: 0 auto;
+}
+
+.vk, .twitter, .fcbk, .git {
+    display: block;
+    width: 47px;
+    height: 47px;
+    background-image: url(../imgs/socials.png);
+
+}
+
+.vk {
+    background-position: 0 0;
+}
+
+.twitter {
+    background-position: -71px 0;
+}
+
+.fcbk {
+    background-position: -142px 0;
+}
+
+.git {
+    background-position: -213px 0;
+}
+
+.vk:hover {
+    background-position: 0 -54px;
+}
+
+.twitter:hover {
+    background-position: -71px -54px;
+}
+
+.fcbk:hover {
+    background-position: -142px -54px;
+}
+
+.git:hover {
+    background-position: -213px -54px;
+}
+
+.gradient-line {
+    height: 3px;
+    background: linear-gradient(to right, #f2f6fa, #1c667a, #f2f6fa);
+    margin-bottom: 40px;
+}
+
+/*Aside*/
+
+.aside {
+    width: 250px;
+    margin-right: 60px;
+    float: left;
+}
+
+.aside__info, .aside__contacts {
+    list-style: none;
+    padding: 0;
+    background-color: #eff3f7;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 23px;
+    margin-top: 0;
+    font-family: fira_sansbook;
+}
+
+
+
+
+.nav__link {
+    color: #959aa8;
+    text-decoration: none;
+    display: block;
+    width: 230px;
+    padding: 19px 0 19px 28px;
+    margin: 0 auto;
+    border-bottom: 2px solid #3ba8c0;
+    font-size: 22px;
+    box-sizing: border-box;
+    font-family: fira_sansbook;
+
+}
+
+.nav__link.noborder {
+    border: none;
+}
+
+.aside__info a:hover {
+    color: #3ba8c0;
+}
+
+.aside .active {
+    background-color: #3ba8c0;
+    margin-top: -2px;
+}
+
+.active .nav__link, .active .nav__link:hover  {
+    color: #fff;
+}
+
+/*Контакты*/
+
+
+.contacts__title {
+    padding: 3px 0 3px 21px;
+    font-size: 22px;
+    background-color: #3ba8c0;
+    color: #fff;
+    margin: 0;
+}
+
+.contacts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.email__link, .skype__link, .phone__link {
+    color: #fff;
+    text-decoration: none;
+    font-family: fira_sansbook;
+    height: 40px;
+    padding-left: 83px;
+    vertical-align: middle;
+    display: table-cell;
+    width: 250px;
+    background-image: url("../imgs/contacts.png");
+    background-repeat: no-repeat;
+}
+
+.email__link:hover, .skype__link:hover, .phone__link:hover {
+    text-decoration: underline;
+}
+
+.email__link {
+    background-color: #41b9d4;
+    background-position: 42px 11px;
+}
+
+.phone__link {
+    background-color: #48cbe8;
+    background-position: 42px -30px;
+}
+
+.skype__link {
+    background-color: #51daf8;
+    background-position: 42px -70px;
+}
+
+.email__link:before {
+    content: " ";
+    width: 22px;
+    height: 22px;
+    background-image: url("../imgs/contacts.png");
+    background-position: 0 0;
+}
+/*Контакты конец*/
+
+.main {
+
+}
+
+
+.content {
+    float: left;
+}
+
+.article {
+    background-color: #eff3f7;
+    width: 650px;
+    margin-bottom: 26px;
+    padding-bottom: 46px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/*Основная информация*/
+.main-info__wrapper {
+    padding-left: 60px;
+}
+
+.article__header {
+    font-size: 27px;
+    line-height: 30px;
+    color: #3ba8c0;
+    font-weight: normal;
+    font-family: fira_sansbook;
+    box-sizing: border-box;
+    border-bottom: 2px solid #3ba8c0;
+    padding: 15px 26px 15px 22px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+
+.my-foto {
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #33a6bd;
+    overflow: hidden;
+    float: left;
+    margin-right: 24px;
+}
+
+.my-foto__img {
+    position: relative;
+    top: -206px;
+    left: -277px;
+    width: 500px;
+    height: auto;
+}
+
+.main-info__info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.info__item {
+    font-size: 17px;
+    line-height: 17px;
+    margin-bottom: 15px;
+}
+
+.info__item:last-child {
+    margin-bottom: 0;
+}
+
+.info__label {
+    font-family: fira_sansmedium;
+    margin-right: 20px;
+}
+
+.info__text {
+    font-size: 15px;
+}
+
+.info_skills {
+    font-family: proxima_nova_condensedSBd;
+    font-size: 14px;
+    list-style: none;
+    padding: 0;
+    float: left;
+    width: 195px;
+}
+
+.info__label.skills {
+    float: left;
+}
+
+.info_skills__item {
+    display: inline-block;
+    padding: 3px 13px;
+    border-radius: 2px;
+    background-image: -moz-linear-gradient(90deg, rgb(46, 140, 162) 0%, rgb(46, 140, 162) 52%, rgb(59, 168, 192) 53%, rgb(59, 168, 192) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(46, 140, 162) 0%, rgb(46, 140, 162) 52%, rgb(59, 168, 192) 53%, rgb(59, 168, 192) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(46, 140, 162) 0%, rgb(46, 140, 162) 52%, rgb(59, 168, 192) 53%, rgb(59, 168, 192) 100%);
+    color: #fff;
+    margin-right: 7px;
+    margin-bottom: 9px;
+    float: left;
+}
+
+/*Основная информация конец*/
+
+/*Опыт работы*/
+
+.expirience, .education {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.exp-item, .edu-item {
+    margin-bottom: 24px;
+    padding-left: 125px;
+    background: url("../imgs/exp-edu.png") no-repeat;
+    background-position: 42px -20px;
+}
+
+.edu-item.univer {
+    background-position: 45px -445px;
+}
+
+.edu-item.courses {
+    background-position: 47px -240px;
+}
+
+.exp-item:last-child, .edu-item:last-child {
+    margin: 0;
+}
+
+.exp-item__header, .edu-item__header {
+    font-family: fira_sansbook;
+    font-size: 17px;
+    line-height: 17px;
+    margin: 0;
+}
+
+.exp-item__time, .edu-item__time {
+    font-family: fira_sanslight;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+/*Основная информация конец*/
+
+
+/*Подвал*/
+
+.footer {
+    height: 68px;
+    background-color: #eff3f7;
+    text-align: center;
+    font-family: fira_sanslight;
+    font-size: 13px;
+    margin-top: -68px;
+}
+
+.footer__copyright {
+    line-height: 65px;
+}
+
+.footer__gradient-line {
+    height: 3px;
+    background: linear-gradient(to right, #f2f6fa, #1c667a, #f2f6fa);
+}
+
+.footer__wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.footer__login {
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 15px;
+    width: 20px;
+    height:32px;
+    background-image: url("../imgs/footer-login.png");
+    background-position: 20px 0px;
+}
+
+.footer__login:hover {
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+/*Подвал конец*/
+
+
+
+
+
