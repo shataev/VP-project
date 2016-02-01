@@ -1,0 +1,121 @@
+/*Стили страницы Мои работы*/
+
+.my-works {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+    min-height: 840px;
+}
+
+.my-works__item {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 47px;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+}
+
+.last-in-row {
+    margin-right: 0;
+}
+
+.example-img {
+    width: 183px;
+    height: 129px;
+    border: 2px solid #3ba8c0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 9px;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+}
+
+.example-link {
+    font-family: fira_sanslight_italic;
+    text-decoration: none;
+    color: #53b2c7;
+    font-size: 13px;
+    line-height: 1;
+
+}
+
+.example-description {
+    font-family: fira_sanslight;
+    font-size: 15px;
+    line-height: 1;
+    width: 183px;
+    margin: 10px 0 0 0;
+}
+
+.add-project {
+    margin-right: 0;
+}
+
+.add-project__link {
+    display: block;
+    width: 183px;
+    height: 129px;
+    border: 1px dashed #3ba8c0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 9px;
+    font-family: fira_sanslight;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 13px;
+    padding-top: 79px;
+    color: #3ba8c0;
+    background-image: url("../imgs/exp-edu.png");
+    background-position: 340px -128px;
+    background-color: #edf8fc;
+}
+
+
+/*Зум картинки-превью проекта*/
+.zoom-wrapper {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    text-align: center;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+
+
+}
+
+.example-img:hover .zoom-wrapper {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+
+.zoom-wrapper__link {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: fira_sansbook;
+    font-size: 12px;
+    padding: 0 4px;
+}
+
+.example-img:hover .project-img {
+    -moz-opacity: 0.20;
+    opacity:.20;
+    filter: alpha(opacity=20);
+}
+
+.example-img:hover {
+    background-color: #4191bb;
+}
+
+/*Зум картинки-превью проекта конец*/
+
+/*Стили страницы Мои работы конец*/
