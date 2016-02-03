@@ -1,0 +1,22 @@
+{
+  "name": "wannaweed.ru",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Vitya Shataev <vityashataev@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "2.8.3",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
