@@ -127,6 +127,8 @@ body {
 }
 
 .header__logo {
+    width: 243px;
+    height: 40px;
     float: left;
     margin-top: 41px;
 }
@@ -387,10 +389,13 @@ body {
 .info__label {
     font-family: fira_sansmedium;
     margin-right: 20px;
+    float: left;
 }
 
 .info__text {
     font-size: 15px;
+    float: right;
+    max-width: 220px;
 }
 
 .info_skills {
