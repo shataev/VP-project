@@ -8,6 +8,7 @@
 	<!-- bower:css -->
 	<link rel="stylesheet" href="css/normalize.css" />
 	<!-- endbower -->
+	<link type="text/css" rel="stylesheet" href="app/bower/jquery.qtip.custom/jquery.qtip.css" />
 	<!--[if lt IE 9]>
 	<script src="app/bower/html5shiv/dist/html5shiv.js"></script>
 	<![endif]-->
@@ -117,7 +118,7 @@
 								</a>
 							</li>
 						</ul>
-
+					</article>
 				</section>
 			</main>
 		</div>
@@ -130,27 +131,29 @@
 			<div class="modal-window__wrapper">
 
 				<!--Форма-->
-				<form action="" method="post" class="add-project__form">
+				<form action="" method="post" class="add-project__form" id="add-proj-form">
 					<fieldset class="fieldset name-project clearfix">
 						<label for="name-project-edit" class="name-project__label">Название проекта
 							<input type="text" name="name-project-edit" class="name-project-edit__name"
-								   id="name-project-edit" placeholder="Введите название"/>
+								   id="name-project-edit" placeholder="Введите название"
+								   qtip-content="Вы не ввели название"/>
 						</label>
 					</fieldset>
 					<fieldset class="fieldset upload-img clearfix">
 						<label for="upload-img-edit" class="upload-img__label">Картинка проекта
-							<div class="fileform">
+							<div class="fileform" qtip-content="Описание проекта обязательно">
 								<span class="upload-img__placeholder">Загрузите изображение</span>
 								<div class="select-btn"></div>
 								<input type="file" name="upload-img-edit" class="upload-img-edit__upload-img" id="upload-img-edit"
-									   placeholder="Загрузите изображение"/>
+									   placeholder="Загрузите изображение" qtip-content="Вы не выбрали изображение"/>
 							</div>
 						</label>
 					</fieldset>
 					<fieldset class="fieldset url-project clearfix">
 						<label for="url-project-edit" class="url__label">URL проекта
 							<input type="text" name="url-project-edit" class="url-project-edit__url"
-								   id="url-project-edit" placeholder="Добавьте ссылку"/>
+								   id="url-project-edit" placeholder="Добавьте ссылку"
+								   qtip-content="Вы не добавили ссылку"/>
 
 						</label>
 					</fieldset>
@@ -158,12 +161,12 @@
 						<label for="discription-edit" class="discription__label">Описание
 							<textarea name="discription-edit" class="discription-edit__discription"
 									  id="discription-edit" placeholder="Пара слов о вашем проекте"
-									  maxlength="400"></textarea>
+									  maxlength="400" qtip-content="Описание проекта обязательно"></textarea>
 						</label>
 					</fieldset>
 
 
-						<button type="submit" class="button--submit">Добавить</button>
+						<button type="submit" class="button--submit" id="add-project-button">Добавить</button>
 
 
 				</form>
@@ -187,5 +190,6 @@
 	<script src="app/bower/jquery/dist/jquery.js"></script>
 	<script src="app/bower/bPopup/jquery.bpopup.js"></script>
 	<script src="js/popup.js"></script>
+	<script type="text/javascript" src="app/bower/jquery.qtip.custom/jquery.qtip.js"></script>
 </body>
 </html>
