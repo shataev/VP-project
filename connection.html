@@ -8,6 +8,7 @@
 	<!-- bower:css -->
 	<link rel="stylesheet" href="css/normalize.css" />
 	<!-- endbower -->
+	<link type="text/css" rel="stylesheet" href="app/bower/jquery.qtip.custom/jquery.qtip.css" />
 	<!--[if lt IE 9]>
 	<script src="app/bower/html5shiv/dist/html5shiv.js"></script>
 	<![endif]-->
@@ -71,24 +72,32 @@
 				<article class="article connection">
 					<h1 class="connection__header">У вас интересный проект? Напишите мне</h1>
 
-					<form action="" class="connection__form">
+					<form action="" class="connection__form" id="connect-with-me">
 						<fieldset class="fieldset name clearfix">
 							<label for="name-edit" class="name__label">Имя
-								<input type="text" name="name-edit" class="name-edit__name" id="name-edit" placeholder="Как к вам обращаться"/>
+								<input type="text" name="name-edit" class="name-edit__name" id="name-edit"
+									   qtip-position="left" qtip-content="Введите имя"
+									   placeholder="Как к вам обращаться"/>
 							</label>
 							<label for="email-edit" class="email__label">Email
-								<input type="text" name="email-edit" class="email-edit__email" id="email-edit" placeholder="Куда мне писать"/>
+								<input type="text" name="email-edit" class="email-edit__email" id="email-edit"
+									   qtip-position="right" qtip-content="Введите адрес электронной почты"
+									   placeholder="Куда мне писать"/>
 							</label>
 						</fieldset>
 						<fieldset class="fieldset message clearfix">
 							<label for="message-edit" class="message__label">Сообщение
-								<textarea name="message-edit" class="message-edit__message" id="message-edit" placeholder="Кратко в чем суть" maxlength="400"></textarea>
+								<textarea name="message-edit" class="message-edit__message" id="message-edit" qtip-position="left"
+										  placeholder="Кратко в чем суть" qtip-content="Введите текст сообщения"
+										  maxlength="400"></textarea>
 							</label>
 						</fieldset>
 						<fieldset class="fieldset captcha clearfix">
 							<label for="captcha-edit" class="captcha__label">Введите код, указанный  на картинке
 								<input type="text" class="captcha__area" value="E0Ed3r" readonly/>
-								<input type="text" name="captcha-edit" class="captcha-edit__captcha" id="captcha-edit" placeholder="Введите код"/>
+								<input type="text" name="captcha-edit" class="captcha-edit__captcha"
+									   id="captcha-edit" qtip-position="right" qtip-content="Введите код с картинки"
+									   placeholder="Введите код"/>
 							</label>
 
 						</fieldset>
@@ -113,6 +122,10 @@
 <!-- bower:js -->
 <script src="js/modernizr.js"></script>
 <script src="app/bower/jquery/dist/jquery.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/connection.js"></script>
+<script type="text/javascript" src="app/bower/jquery.qtip.custom/jquery.qtip.js"></script>
+
 <!-- endbower -->
 </body>
 </html>

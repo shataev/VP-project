@@ -5,14 +5,20 @@ $(document).ready(function () {
         $("#modal-window").bPopup();
     });
 
-    //Закрытие модального окна для добавления проекта
-    $("#close-btn").on('click', function(){
+//Закрытие модального окна для добавления проекта
+    var closeWnd = function () {
         $("#modal-window").bPopup().close();
+        removeTt();
+        console.log("closed");
+    };
 
-    });
+     var addForm = $("#add-proj-form");
+     var elems = addForm.find('input, textarea, .fileform').not("input[type='file']");
+
 
     //Создаем тултипы
-    var createTt = function(element){
+    var createTt = function (element, position) {
+
         element.qtip({
             content: {
                 text: element.attr('qtip-content')
@@ -25,33 +31,45 @@ $(document).ready(function () {
                 my: 'center right',
                 at: 'center left'
             },
+
             show: {
                 event: 'show'
             },
             hide: {
-                event: 'hide'
+                event: 'keydown removeTt click'
             }
+
         }).trigger('show');
     };
 
 
-    //Нажатие кнопки "Добавить"
-    $('#add-proj-form').on('submit', function(e){
-        e.preventDefault();
+     //Убираем тултипы и класс empty-field
+     var removeTt = function (){
+     addForm.find('input, textarea, .fileform').removeClass('empty-field');
+     $(".qtip").remove();
+     console.log("убрал классы");
+     };
 
-        var addForm = $("#add-proj-form");
-        var elems = addForm.find('input, textarea, .fileform').not("input[type='file']");
-        console.log(elems);
-        $.each(elems, function(index,element){
-            var elem = $(element);
-            var val = elem.val();
-            if (val.length == 0) {
-                elem.addClass('empty-field');
-                createTt(elem);
 
-            }
-        });
-    });
+
+
+     //Нажатие кнопки "Добавить"
+     addForm.on('submit', function(e){
+     e.preventDefault();
+     console.log("нажал добавить");
+     $.each(elems, function(index,element){
+     var elem = $(element);
+     var val = elem.val();
+     if (!val.length) {
+     elem.addClass('empty-field');
+     createTt(elem);
+     }
+     });
+     });
+
+
+
+     $("#close-btn").on('click', closeWnd);
 
 
 
