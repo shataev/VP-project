@@ -161,3 +161,14 @@ textarea:focus {
     margin: 0;
 }
 
+.empty-field {
+    border: 1px solid #f97e76;
+    background-color: #fdd5d2;
+    color: #8ab7c7;
+}
+
+.qtip-content {
+    color: #fff;
+    font-size: 13px;
+}
+

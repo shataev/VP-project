@@ -118,4 +118,202 @@
 
 /*Зум картинки-превью проекта конец*/
 
+/*Модальное окно*/
+#modal-window {
+    display: none;
+    width: 370px;
+    background-color: #eff3f7;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.modal-window__wrapper {
+    width: 321px;
+    margin: 0 auto;
+}
+
+.modal-window__header {
+    background-color:  #48cbe8;
+    padding: 10px;
+    border-bottom: 15px solid #67dffa;
+    margin-bottom: 17px;
+}
+
+.modal_window__header__text {
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+    float: left;    
+}
+
+.close-btn {
+    width: 25px;
+    height: 25px;
+    float: right;
+    border-radius: 50%;
+    background-image: url("../imgs/modal-sprite.png");
+    background-position: -6px -7px;
+    position: relative;
+    top: 2px;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+/*Форма*/
+.add-project__form {
+    width: 321px;
+    margin: 0 auto;
+    border: none;
+}
+
+.fieldset {
+    margin: 0 0 17px 0;
+    padding: 0;
+    border: none;
+}
+
+.name-project__label, .upload-img__label, .discription__label, .url__label, .upload-img__label {
+    display: block;
+    font-family: fira_sanslight;
+    font-size: 19px;
+    color: #a1a6b3;
+    position: relative;
+}
+
+
+.name-project-edit__name, .discription-edit__discription, .url-project-edit__url {
+    width: 100%;
+    height: 41px;
+    box-sizing: border-box;
+    color: #3ba8c0;
+    border: 1px solid #3ba8c0;
+    border-radius: 3px;
+    font-family: fira_sanslight;
+    font-size: 13px;
+    padding: 0 0 0 10px;
+    background-color: #fbfcfd;
+}
+
+.fileform {
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+    height: 41px;
+    box-sizing: border-box;
+    color: #3ba8c0;
+    border: 1px solid #3ba8c0;
+    border-radius: 3px;
+    background-color: #fff;
+
+}
+
+.select-btn {
+    height: 41px;
+    width: 60px;
+    background-image: url("../imgs/modal-sprite.png");
+    background-position: 11px -140px;
+    float: right;
+    background-color:  #48cbe8;
+}
+
+.upload-img-edit__upload-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    font-size: 150px;
+    z-index: 20;
+}
+
+.upload-img__placeholder {
+    font-size: 13px;
+    line-height: 41px;
+    padding: 0 0 0 10px;
+}
+
+.discription-edit__discription {
+    resize: none;
+    padding: 14px 0 0 10px;
+    height: 150px;
+}
+
+input::-moz-placeholder {
+    color: #3ba8c0;
+}
+
+input:-ms-input-placeholder {
+    color: #3ba8c0;
+}
+
+input::-webkit-input-placeholder {
+    color: #3ba8c0;
+}
+
+
+textarea::-moz-placeholder {
+    color: #3ba8c0;
+}
+
+textarea:-ms-input-placeholder {
+    color: #3ba8c0;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #3ba8c0;
+}
+
+button,
+button:active,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.button--submit {
+    width: 138px;
+    height: 30px;
+    color: #fff;
+    font-family: fira_sansbook;
+    font-size: 19px;
+    border-radius: 4px;
+    border: none;
+    background-color: #48cbe8;
+    box-shadow: 0 2px 5px #3ba8c0;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 17px;
+}
+
+
+.button--submit:hover {
+    background-color: #24bbdc;
+}
+
+.button--reset:active,
+.button--submit:active {
+    box-shadow: none;
+}
+
+.empty-field {
+    border: 1px solid #f97e76;
+    background-color: #fdd5d2;
+    color: #8ab7c7;
+}
+
+.qtip-content {
+    color: #fff;
+    font-size: 13px;
+}
+
+
+
+/*Форма конец*/
+
+/*Модальное окно конец*/
+
 /*Стили страницы Мои работы конец*/
