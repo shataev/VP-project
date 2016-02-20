@@ -2,23 +2,43 @@ $(document).ready(function () {
 //Открытие модального окна для добавления проекта
     $(".add-project__link").on('click', function (e) {
         e.preventDefault();
-        $("#modal-window").bPopup();
+        $("#modal-window").bPopup({
+	        onClose: function() { removeTt(); $("form")[0].reset();}
+        });
     });
 
-//Закрытие модального окна для добавления проекта
+
+	//Закрытие модального окна для добавления проекта
     var closeWnd = function () {
-        $("#modal-window").bPopup().close();
         removeTt();
-        console.log("closed");
+        $("form")[0].reset();
+        $("#modal-window").bPopup().close();
     };
 
-     var addForm = $("#add-proj-form");
-     var elems = addForm.find('input, textarea, .fileform').not("input[type='file']");
+
+	var addForm = $("#add-proj-form");
+    var elems = addForm.find('input, textarea, .fileform').not("input[type='file']");
+
+	//Нажатие кнопки "Добавить"
+	addForm.on('submit', function(e){
+		e.preventDefault();
+		$.each(elems, function(index,element){
+			var elem = $(element);
+			var val = elem.val();
+			if (!val.length) {
+				elem.addClass('empty-field');
+				createTt(elem);
+			}
+		});
+	});
+	//Нажатие кнопки "Закрыть"
+    $("#close-btn").on('click', closeWnd);
+
+	//События при закрытии модального окна
 
 
     //Создаем тултипы
     var createTt = function (element, position) {
-
         element.qtip({
             content: {
                 text: element.attr('qtip-content')
@@ -36,7 +56,7 @@ $(document).ready(function () {
                 event: 'show'
             },
             hide: {
-                event: 'keydown removeTt click'
+	                event: 'keydown removeTt click'
             }
 
         }).trigger('show');
@@ -45,31 +65,12 @@ $(document).ready(function () {
 
      //Убираем тултипы и класс empty-field
      var removeTt = function (){
-     addForm.find('input, textarea, .fileform').removeClass('empty-field');
-     $(".qtip").remove();
-     console.log("убрал классы");
+         addForm.find('input, textarea, .fileform').removeClass('empty-field');
+         $(".qtip").remove();
+         $("form")[0].reset();
      };
 
 
-
-
-     //Нажатие кнопки "Добавить"
-     addForm.on('submit', function(e){
-     e.preventDefault();
-     console.log("нажал добавить");
-     $.each(elems, function(index,element){
-     var elem = $(element);
-     var val = elem.val();
-     if (!val.length) {
-     elem.addClass('empty-field');
-     createTt(elem);
-     }
-     });
-     });
-
-
-
-     $("#close-btn").on('click', closeWnd);
 
 
 
