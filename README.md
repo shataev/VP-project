@@ -5,4 +5,4 @@
 2. cd vp1
 3. npm i
 4. npm install -g bower
-
+5. bower i
