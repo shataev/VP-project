@@ -233,6 +233,9 @@
     font-size: 13px;
     line-height: 41px;
     padding: 0 0 0 10px;
+    width: 245px;
+    display: block;
+    float: left;
 }
 
 .discription-edit__discription {
