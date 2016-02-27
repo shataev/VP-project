@@ -1,4 +1,4 @@
-var validation = (function () {
+/*var validation = (function () {
 
     //Инициализирует наш модуль
     var init = function () {
@@ -82,3 +82,4 @@ var validation = (function () {
 })();
 
 validation.init();
+*/

@@ -1,7 +1,7 @@
 /**
  * Created by Кира on 10.02.2016.
  */
-var connectWitnMe = (function () {
+/*var connectWitnMe = (function () {
 
     //Инициализирует наш модуль
     var init = function () {
@@ -46,3 +46,74 @@ var connectWitnMe = (function () {
 })();
 
 connectWitnMe.init();
+*/
+
+
+var connectWithMe = (function() {
+	var $form = $('#connect-with-me');
+	var elems = $form.find('input, textarea');
+
+
+	var handlers = function () {
+		$form.on('submit', function(e){
+			e.preventDefault();
+			validate()});
+	};
+
+	var validate = function($form){
+		elems.each(function(elem){
+			if ($(this).val() == 0) {
+				console.log('empty field');
+				$(this).addClass('empty-field');
+				createTt($(this));
+			}
+		})
+	};
+
+	var createTt = function(element){
+		var position = element.attr('qtip-position');
+		if (!position) {
+			position = "left";
+		}   else {
+			if (position === "right") {
+				position = {
+					my: 'center left',
+					at: 'center right'
+				}
+			} else {
+				position = {
+					my: 'center right',
+					at: 'center left',
+					adjust: {
+						method: "shift none"
+					}
+				}
+			}
+		}
+		element.qtip({
+			content: {
+				text: element.attr('qtip-content')
+
+			},
+			style: {
+				classes: 'qtip-red qtip-rounded'
+			},
+			position: position,
+
+			show: {
+				event: 'show'
+			},
+			hide: {
+				event: 'keydown click'
+			}
+
+		}).trigger('show');
+	};
+
+	return {
+		formIt : handlers,
+	}
+
+})();
+
+connectWithMe.formIt();
