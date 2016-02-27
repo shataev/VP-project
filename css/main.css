@@ -2,7 +2,6 @@
     font-family: 'proxima_nova_condensedSBd';
     src: url('../fonts/proximanovacond-semibold-webfont.eot');
     src: url('../fonts/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/proximanovacond-semibold-webfont.woff2') format('woff2'),
     url('../fonts/proximanovacond-semibold-webfont.woff') format('woff'),
     url('../fonts/proximanovacond-semibold-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -14,7 +13,6 @@
     font-family: 'fira_sansbook';
     src: url('../fonts/firasans-book-webfont.eot');
     src: url('../fonts/firasans-book-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/firasans-book-webfont.woff2') format('woff2'),
     url('../fonts/firasans-book-webfont.woff') format('woff'),
     url('../fonts/firasans-book-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -29,7 +27,6 @@
     font-family: 'fira_sansmedium';
     src: url('../fonts/firasans-medium-webfont.eot');
     src: url('../fonts/firasans-medium-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/firasans-medium-webfont.woff2') format('woff2'),
     url('../fonts/firasans-medium-webfont.woff') format('woff'),
     url('../fonts/firasans-medium-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -44,7 +41,6 @@
     font-family: 'fira_sanslight';
     src: url('../fonts/firasans-light-webfont.eot');
     src: url('../fonts/firasans-light-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/firasans-light-webfont.woff2') format('woff2'),
     url('../fonts/firasans-light-webfont.woff') format('woff'),
     url('../fonts/firasans-light-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -56,7 +52,6 @@
     font-family: 'fira_sanslight_italic';
     src: url('../fonts/firasans-lightitalic-webfont.eot');
     src: url('../fonts/firasans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/firasans-lightitalic-webfont.woff2') format('woff2'),
     url('../fonts/firasans-lightitalic-webfont.woff') format('woff'),
     url('../fonts/firasans-lightitalic-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -68,7 +63,6 @@
     font-family: 'ogilvie_cyrregular';
     src: url('../fonts/ogil-webfont.eot');
     src: url('../fonts/ogil-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ogil-webfont.woff2') format('woff2'),
     url('../fonts/ogil-webfont.woff') format('woff'),
     url('../fonts/ogil-webfont.ttf') format('truetype');
     font-weight: normal;
