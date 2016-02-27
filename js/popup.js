@@ -19,8 +19,12 @@ $(document).ready(function () {
     var fileform = $('.fileform');
     var uploadImg = $('.upload-img__placeholder');
 
-	elems.each(function(){
 
+	addForm.on('click', function(e){
+		var $target = $(e.target);
+		if ($target.hasClass('empty-field')){
+			$target.removeClass('empty-field');
+		}
 	});
 
 	//Нажатие кнопки "Добавить"
