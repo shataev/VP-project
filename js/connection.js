@@ -53,11 +53,23 @@ var connectWithMe = (function() {
 	var $form = $('#connect-with-me');
 	var elems = $form.find('input, textarea');
 
-
 	var handlers = function () {
 		$form.on('submit', function(e){
 			e.preventDefault();
-			validate()});
+			validate();
+		});
+
+		$form.on('reset', function(e){
+			clearFields();
+			$('.qtip').remove();
+		});
+
+		$form.on('click', function(e){
+			var $target = $(e.target);
+			if ($target.hasClass('empty-field')){
+				$target.removeClass('empty-field');
+			}
+		})
 	};
 
 	var validate = function($form){
@@ -90,6 +102,7 @@ var connectWithMe = (function() {
 				}
 			}
 		}
+
 		element.qtip({
 			content: {
 				text: element.attr('qtip-content')
@@ -108,6 +121,12 @@ var connectWithMe = (function() {
 			}
 
 		}).trigger('show');
+	};
+
+	var clearFields = function(element) {
+		elems.each(function(elem){
+			$(this).removeClass('empty-field');
+		})
 	};
 
 	return {
