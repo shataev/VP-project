@@ -19,6 +19,10 @@ $(document).ready(function () {
     var fileform = $('.fileform');
     var uploadImg = $('.upload-img__placeholder');
 
+	elems.each(function(){
+
+	});
+
 	//Нажатие кнопки "Добавить"
 	addForm.on('submit', function(e){
 		e.preventDefault();
